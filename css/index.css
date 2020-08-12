@@ -1,0 +1,350 @@
+:root {
+  --primary-one: hsl(171, 66%, 44%);
+  --primary-two: #6173ff;
+  --neutral-one: hsl(210, 10%, 33%);
+  --neutral-two: hsl(201, 11%, 66%);
+  --font-size: 18px;
+  --font-family: "Bai Jamjuree", sans-serif;
+  --font-weight-one: 400;
+  --font-weight-two: 600;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+section > p {
+  color: var(--neutral-two);
+}
+section > h1 {
+  color: var(--neutral-one);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  section {
+    margin-left: 2em;
+    margin-right: 2em;
+    font-family: var(--font-family);
+    text-align: justify;
+  }
+  section > h1 {
+    font-size: 27px;
+    text-align: center;
+    padding-bottom: 0.8em;
+    font-weight: var(--font-weight-two);
+  }
+  .logo {
+    background: url("../images/bg-header-mobile.png") no-repeat center center;
+    background-size: cover;
+    padding-top: 4em;
+    padding-bottom: 2em;
+  }
+  .logo > img {
+    width: 80px;
+    margin-left: 35%;
+  }
+
+  .clipboard {
+    padding-bottom: 2em;
+  }
+  button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 12em;
+    height: 3em;
+    text-align: center;
+    font-size: var(--font-size);
+    border-radius: 30px;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-left: 2em;
+  }
+  .ios {
+    background-color: var(--primary-one);
+    box-shadow: 0px 6px 3px -1px rgba(6, 89, 77, 1);
+  }
+  .mac {
+    background-color: var(--primary-two);
+    box-shadow: 0px 6px 3px -1px rgba(22, 42, 196, 1);
+    margin-bottom: 6em;
+  }
+  .store {
+    margin-bottom: 4em;
+  }
+  .comp {
+    width: 300px;
+    padding-bottom: 2em;
+  }
+  .quick h2,
+  .lis h2 {
+    color: var(--neutral-one);
+    padding-bottom: 0.3em;
+    padding-top: 0.5em;
+    text-align: center;
+  }
+  .quick p,
+  .lis p,
+  .board > p {
+    color: var(--neutral-two);
+  }
+  .access {
+    padding-top: 5em;
+  }
+  .devices {
+    width: 300px;
+    padding-top: 2em;
+    padding-bottom: 5em;
+  }
+  .super {
+    padding-bottom: 4em;
+  }
+  .lis img {
+    margin: auto;
+    display: block;
+    padding-bottom: 2em;
+  }
+  .lis p {
+    padding-bottom: 4em;
+  }
+  .logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logos > img {
+    padding-bottom: 3em;
+  }
+  .board {
+    padding-bottom: 5em;
+  }
+  .board > h1 {
+    font-size: 27px;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 0.8em;
+    font-weight: var(--font-weight-two);
+    color: var(--neutral-one);
+  }
+  .board > p {
+    padding-bottom: 2em;
+  }
+  .logo2 {
+    width: 50px;
+    margin: auto;
+    display: block;
+    padding-bottom: 2em;
+  }
+  .others {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+  .others > li {
+    list-style: none;
+    padding-bottom: 0.8em;
+    color: var(--neutral-two);
+  }
+  .social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  .social > img {
+    padding-left: 1em;
+    width: 35px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1440px) {
+  section {
+    margin-left: 4em;
+    margin-right: 4em;
+    font-family: var(--font-family);
+    text-align: justify;
+  }
+  section > h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 0.8em;
+    font-weight: var(--font-weight-two);
+  }
+  section > p {
+    padding-left: 18em;
+    padding-right: 18em;
+    text-align: center;
+  }
+  .logo {
+    background: url("../images/bg-header-desktop.png") no-repeat center center;
+    background-size: cover;
+    padding-top: 3em;
+  }
+  .logo > img {
+    width: 90px;
+    display: block;
+    margin: auto;
+    padding-bottom: 2em;
+  }
+  .ton {
+    margin-left: 20%;
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+  button {
+    width: 18em;
+    height: 3.5em;
+    font-size: var(--font-size);
+    margin-left: 1em;
+    border-radius: 30px;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+  }
+  .ios {
+    background-color: var(--primary-one);
+    box-shadow: 0px 6px 3px -1px rgba(6, 89, 77, 1);
+  }
+  .mac {
+    background-color: var(--primary-two);
+    box-shadow: 0px 6px 3px -1px rgba(22, 42, 196, 1);
+  }
+  .store {
+    padding-bottom: 3em;
+  }
+  .comp2 {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    direction: rtl;
+  }
+  .comp {
+    max-height: 100%;
+  }
+  .quick {
+    position: relative;
+    margin-left: 50%;
+    padding-right: 20%;
+    padding-top: 3em;
+    padding-bottom: 10em;
+  }
+  .quick h2 {
+    font-size: 27px;
+    padding-bottom: 0.3em;
+    font-weight: var(--font-weight-two);
+    color: var(--neutral-one);
+  }
+  .quick p {
+    padding-bottom: 2em;
+    color: var(--neutral-two);
+  }
+  .devices {
+    padding-top: 5em;
+    width: 600px;
+    display: block;
+    margin: auto;
+  }
+  .lis {
+    display: grid;
+    grid-gap: 3rem;
+    padding: 4em 6em 6em 6em;
+  }
+  .lis h2 {
+    text-align: center;
+    color: var(--neutral-one);
+    padding-bottom: 0.7em;
+  }
+  .lis p {
+    color: var(--neutral-two);
+    text-align: center;
+  }
+  .lis img {
+    display: block;
+    margin: auto;
+    padding-bottom: 3em;
+  }
+  .black {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .snip {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding-top: 0.6em;
+  }
+  .pre {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    padding-top: 0.6em;
+  }
+  .logos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7em;
+  }
+  .logos img {
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+  .board {
+    padding-top: 2em;
+    text-align: center;
+  }
+  .board h1 {
+    color: var(--neutral-one);
+    padding-bottom: 0.7em;
+  }
+  .board p {
+    padding-bottom: 4em;
+    color: var(--neutral-two);
+    padding-left: 18em;
+    padding-right: 18em;
+  }
+  .final {
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    padding-top: 8em;
+    padding-bottom: 3em;
+  }
+  .logo2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 40px;
+    display: block;
+    margin: auto;
+  }
+  .others {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    list-style: none;
+  }
+  .others li {
+    width: 33%;
+    padding-bottom: 0.4em;
+    float: left;
+  }
+  .social {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .social img {
+    padding-left: 1em;
+  }
+}
